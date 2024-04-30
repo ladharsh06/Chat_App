@@ -7,7 +7,7 @@ import ChatFeed from './components/ChatFeed.jsx';
 import LoginForm from './components/LoginForm';
 
 
-const projectID="45d27b32-18de-4053-8350-3d2c688c58aa";
+const projectID="7cdbc2bf-8617-45aa-b0fe-8869919b6903";
 const App=()=>{
     if (!localStorage.getItem('username')) return <LoginForm />;
     return(
@@ -17,10 +17,10 @@ const App=()=>{
             projectID={projectID}
             userName={localStorage.getItem('username')}
             userSecret={localStorage.getItem('password')}
-            // userName="Harsh Lad"
+            // userName="Harsh"
             // userSecret="1234"
-            // userName="Tanishq"
-            // userSecret="1234"
+            // userName="Interviewer"
+            // userSecret="1234" 
             renderChatFeed={(chatAppProps)=> <ChatFeed {...chatAppProps} />}
         />
     );
